@@ -1,0 +1,23 @@
+
+.t1 {
+    width:400px;
+}
+.d1 {
+    display:block;
+    text-align:center;
+    margin-top:20px;
+}
+#mensaje{
+    height:200px;
+}
+form {
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    padding:20px;
+    border: 1px;
+    border-radius: 10px;
+    border-color: gainsboro;
+    border-style:solid;
+}

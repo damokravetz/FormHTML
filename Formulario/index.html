@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
-<form>
-    Nombre:<br>
-    <input type="text" name="firstname"><br>
-    Apellido:<br>
-    <input type="text" name="lastname"><br>
-    Celular:<br>
-    <input type="text" name="firstname"><br>
-</form>
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<div class="d1">
+    <form>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre">
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+            <label for="telefono">Telefono:</label>
+            <input type="text" class="form-control" id="telefono">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+</div>
+<script type="text/javascript" src="jscript.js"></script>
 </html>
