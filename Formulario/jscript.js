@@ -49,3 +49,11 @@ document.getElementById("btnenviar").addEventListener('click', function () {
         return true;
     }
 });
+
+
+
+document.getElementById("combopaises").addEventListener('click', function () {
+    if (this.value == "Argentina") {
+
+    }
+});

@@ -75,6 +75,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="estilo.css" />
     <Content Include="index.html" />
+    <Content Include="jquery-3.4.1.min.js" />
     <Content Include="jscript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
