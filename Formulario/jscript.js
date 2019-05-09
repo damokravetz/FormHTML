@@ -50,10 +50,15 @@ document.getElementById("btnenviar").addEventListener('click', function () {
     }
 });
 
-
-
-document.getElementById("combopaises").addEventListener('click', function () {
-    if (this.value == "Argentina") {
-
-    }
+$(document).ready(function () {
+    $.getJSON("paises.json", leerJsonPaises );
 });
+
+function leerJsonPaises( data ) {
+    //console.log("paso");
+    //console.log(data);
+    $.each(data, function (idx, item) {
+        var html = "<option value=" + item.code + ">" + item.name + "</option>"
+        $("#combopaises").append(html);
+    });
+}
