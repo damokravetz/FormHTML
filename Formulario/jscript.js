@@ -63,8 +63,8 @@ function leerJsonPaises( data ) {
     });
 }
 
-//$("#combopaises").change(crearcombo)
-$("#combopaises").addEventListener('change', crearcombo)
+$("#combopaises").change(crearcombo)
+//$("#combopaises").addEventListener('change', crearcombo) No funca
     
 
 function crearcombo() {
