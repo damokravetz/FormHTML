@@ -62,3 +62,23 @@ function leerJsonPaises( data ) {
         $("#combopaises").append(html);
     });
 }
+
+//$("#combopaises").change(crearcombo)
+$("#combopaises").addEventListener('change', crearcombo)
+    
+
+function crearcombo() {
+    var micombo = $("#combopaises")
+    if (micombo.find(":selected").val()=="AR") {
+        var ncombo = "<div class='form-group'></div><label for='comboprovincias'>Provincia:</label><select class='form-control' id='comboprovincias'><option >Seleccionar una Provincia</option></select>"
+     $("#divcombos").append(ncombo);
+        $.getJSON("provincias.json", traerprovincias)
+    }
+}
+
+function traerprovincias(data) {
+    $.each(data, function (index, value) {
+        var opciones = "<option value=" + value.state + ">" + value.state + "</option>";
+        $("#comboprovincias").append(opciones)
+    });
+}
